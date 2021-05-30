@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 100%;
+    position: relative;
+}
+
+main header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #cacaca;
+    top: 0;
+    z-index: 3;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 8px;
+}
+
+header nav .logo{
+    padding-left: 12px;
+}
+
+header nav input::placeholder{
+    text-align: center;
+}
+
+nav .links a > *{
+    width: 22px;
+    height: 22px;
+    margin: 0px 11px;
+}
+
+a .user_acc{
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #cacaca;
+}
+
+main .main_content{
+    display: flex;
+    width: min-content;
+    margin: 98px auto 0px auto;
+    column-gap: 26px;
+    position: relative;
+}
+
+
+main .content{
+    width: 612px;
+    position: relative;
+}
+
+
+.content .content_stories{
+    overflow-x: hidden;
+}
+
+.content .content_stories .story_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #cacaca;
+    padding: 18px 0px 18px 18px;
+}
+
+.content_stories .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 95%;
+    top: 44px;
+    left: 2.5%;
+}
+
+.buttons span{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.34);
+}
+
+.buttons span:first-child{
+    visibility: hidden;
+}
+
+.story{
+    margin-right: 16px;
+}
+
+.story p{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.story_bg{
+    width: 64px;
+    height: 64px;
+    padding: 2px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.story_bg.smaller{
+    width: 36px;
+    height: 36px;
+}
+
+.story_bg .story_vid{
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.story_bg .story_vid img{
+    height: 100%;
+    width: 100%;
+}
+
+.post_content {
+    width: 100%;
+    margin-top: 24px;
+}
+
+
+.post{
+    border-radius: 3px;
+    margin-bottom: 24px;
+    background-color: #fff;
+    border: 1px solid #cacaca;
+}
+
+.post .post_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+}
+
+.post .post_top .post_id{
+    display: flex;
+    align-items: center;
+}
+
+.post_top .post_menu img{
+    width: 22px;
+    height: 22px;
+}
+
+.post_top .post_menu img:hover{
+    cursor: pointer;
+}
+
+.post .post_image img{
+    height: 611px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.post .post_comment{
+    padding: 16px;
+}
+.post_comment > *{
+    margin-bottom: 8px;
+}
+.post_comment .post_utils{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post_utils a {
+    display: inline-block;
+    margin-right: 16px;
+}
+.post_utils a.last{
+    margin: 0px;
+}
+.post_utils a img{
+    height: 22px;
+    width: 22px;
+}
+.post_comment .post_title b{
+    margin-right: 8px;
+}
+.post_comment .post_time{
+    color: #cdcdcd;
+}
+
+.post .add_comment{
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #cacaca;
+}
+
+.post .add_comment img{
+    width: 22px;
+    height: 22px;
+}
+
+.post .add_comment input{
+    width: 720px;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+}
+
+.post .add_comment button{
+    border: none;
+    color: #bbe6fb;
+    background-color: transparent;
+}
+
+.main_content .sidebar{
+    width: 300px;
+    padding: 16px 8px;
+    /* position: relative; */
+}
+
+.sidebar .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+
+
+.sidebar .top .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.sidebar .top a .user_acc{
+    width: 56px;
+    height: 56px;
+} 
+
+
+.top div p:first-child{
+    margin-bottom: 2px;
+}
+
+.sidebar .middle{
+    margin-top: 16px;
+    padding-left: 8px;
+}
+
+.sidebar .middle .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.sidebar .middle .suggest_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0px;
+}
+
+.sidebar .middle .suggest_items > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.middle .suggest_items a .user_acc{
+    width: 48px;
+    height: 48px;
+}
+
+.sidebar .bottom{
+    font-size: 12px;
+    margin-top: 24px;
+}
+
+.sidebar .bottom ul{
+    display: inline-block;
+}
+
+.sidebar .bottom ul li{
+    float: left;
+    
+    padding: 8px 4px;
+    list-style: none;
+    color: #cacaca;
+}
+
+.bottom p{
+    color: #cacaca;
+    margin-top: 24px;
+}
+
+@media(max-width: 1080px){
+    .sidebar, .sidefake{
+        display: none;
+    }
+}
+
+
+@media(min-width: 1080px){
+    nav{
+        width: 964px;
+        margin: 0px auto;
+    }
+}
+
+@media(max-width: 1349px){
+   .main_content .sidebar{
+        right: 200px;
+    }
+}
+
+@media(min-width: 1349px){
+    .main_content .sidebar{
+        right: 484px;
+    }
+}
